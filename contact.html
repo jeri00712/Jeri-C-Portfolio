@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -11,360 +11,357 @@
 
     <meta
         name="description"
-        content="Contact Jeri C for projects, collaboration, internships and professional opportunities."
-    >
-
-    <meta
-        name="author"
-        content="Jeri C"
-    >
-
-    <meta
-        name="robots"
-        content="index, follow"
+        content="Contact Jeri C for networking, collaboration and opportunities."
     >
 
     <title>Contact | Jeri C</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- ================= ACCESSIBILITY ================= -->
+<a class="skip-link" href="#main-content">
+    Skip to main content
+</a>
 
-    <a href="#main-content">
-        Skip to main content
-    </a>
+<header class="site-header">
+
+    <nav class="nav-container" aria-label="Main navigation">
+
+        <a class="logo" href="index.html">
+            Jeri<span>.</span>
+        </a>
+
+        <ul class="nav-list">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html" aria-current="page">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
 
 
-    <!-- ================= HEADER ================= -->
+<main id="main-content">
 
-    <header>
+    <section class="page-hero">
 
-        <nav aria-label="Primary navigation">
+        <p class="page-label">
+            CONTACT
+        </p>
 
-            <a
-                href="index.html"
-                aria-label="Jeri C Home"
-            >
-                <strong>JERI C</strong>
-            </a>
+        <h1 class="page-title">
+            Let's Connect.
+        </h1>
 
-            <ul>
+        <p class="page-description">
+            Interested in connecting, collaborating or discussing
+            technology? Feel free to reach out.
+        </p>
 
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
+    </section>
 
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
 
-                <li>
-                    <a href="projects.html">
-                        Projects
-                    </a>
-                </li>
+    <section class="contact-layout">
 
-                <li>
-                    <a
-                        href="contact.html"
-                        aria-current="page"
+        <!-- LEFT: FORM -->
+
+        <section class="contact-card">
+
+            <div class="contact-card-heading">
+
+                <h2>
+                    Send a Message
+                </h2>
+
+                <p>
+                    Fill out the form below and share what you would
+                    like to discuss.
+                </p>
+
+            </div>
+
+
+            <form action="#" method="post">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="first-name">
+                            First Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first-name"
+                            autocomplete="given-name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="last-name">
+                            Last Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last-name"
+                            autocomplete="family-name"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
                     >
-                        Contact
-                    </a>
-                </li>
 
-            </ul>
-
-        </nav>
-
-    </header>
+                </div>
 
 
-    <!-- ================= MAIN CONTENT ================= -->
+                <div class="form-group">
 
-    <main id="main-content">
+                    <label for="subject">
+                        Subject
+                    </label>
 
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required
+                    >
 
-        <!-- ================= CONTACT INTRO ================= -->
-
-        <section aria-labelledby="contact-heading">
-
-            <p>
-                Contact
-            </p>
-
-            <h1 id="contact-heading">
-                Let's Connect
-            </h1>
-
-            <p>
-                If you would like to discuss a project,
-                collaboration or professional opportunity,
-                feel free to get in touch.
-            </p>
-
-        </section>
+                </div>
 
 
-        <!-- ================= CONTACT FORM ================= -->
+                <div class="form-group">
 
-        <section aria-labelledby="form-heading">
+                    <label for="message">
+                        Message
+                    </label>
 
-            <h2 id="form-heading">
-                Send a Message
-            </h2>
+                    <textarea
+                        id="message"
+                        name="message"
+                        required
+                    ></textarea>
 
-            <p id="form-description">
-                Fill out the form below to send a message.
-                All fields marked with
-                <span aria-hidden="true">*</span>
-                are required.
-            </p>
-
-
-            <form
-                action="#"
-                method="post"
-                aria-describedby="form-description"
-            >
-
-                <fieldset>
-
-                    <legend>
-                        Contact Information
-                    </legend>
+                </div>
 
 
-                    <!-- NAME -->
-
-                    <div>
-
-                        <label for="name">
-                            Name
-                            <span aria-hidden="true">*</span>
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            autocomplete="name"
-                            required
-                            aria-required="true"
-                        >
-
-                    </div>
+                <p class="form-note">
+                    This form is currently a front-end contact form.
+                </p>
 
 
-                    <!-- EMAIL -->
-
-                    <div>
-
-                        <label for="email">
-                            Email Address
-                            <span aria-hidden="true">*</span>
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            autocomplete="email"
-                            required
-                            aria-required="true"
-                            aria-describedby="email-help"
-                        >
-
-                        <p id="email-help">
-                            Enter a valid email address so I can
-                            respond to your message.
-                        </p>
-
-                    </div>
-
-
-                    <!-- SUBJECT -->
-
-                    <div>
-
-                        <label for="subject">
-                            Subject
-                            <span aria-hidden="true">*</span>
-                        </label>
-
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            autocomplete="off"
-                            required
-                            aria-required="true"
-                        >
-
-                    </div>
-
-
-                    <!-- MESSAGE -->
-
-                    <div>
-
-                        <label for="message">
-                            Message
-                            <span aria-hidden="true">*</span>
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="8"
-                            autocomplete="off"
-                            required
-                            aria-required="true"
-                            aria-describedby="message-help"
-                        ></textarea>
-
-                        <p id="message-help">
-                            Please describe your message
-                            or inquiry.
-                        </p>
-
-                    </div>
-
-
-                    <!-- SUBMIT BUTTON -->
-
-                    <button type="submit">
-                        Send Message
-                    </button>
-
-                </fieldset>
+                <button
+                    class="primary-button"
+                    type="submit"
+                >
+                    Send Message
+                </button>
 
             </form>
 
         </section>
 
 
-        <!-- ================= OTHER CONTACT METHODS ================= -->
+        <!-- RIGHT: LINKS -->
 
-        <section aria-labelledby="connect-heading">
+        <aside class="contact-links-section">
 
-            <h2 id="connect-heading">
-                Other Ways to Connect
-            </h2>
+            <div class="contact-links-heading">
 
-            <address>
+                <h2>
+                    Other Ways to Connect
+                </h2>
 
-                <ul>
+                <p>
+                    You can also find me through these platforms.
+                </p>
 
-                    <!-- EMAIL -->
-
-                    <li>
-
-                        <strong>Email:</strong>
-
-                        <a href="mailto:jersey00712@gmail.com">
-                            jersey00712@gmail.com
-                        </a>
-
-                    </li>
+            </div>
 
 
-                    <!-- LINKEDIN -->
+            <div class="contact-links-grid">
 
-                    <li>
+                <!-- GMAIL -->
 
-                        <strong>LinkedIn:</strong>
+                <a
+                    class="contact-link-card"
+                    href="mailto:jersey00712@gmail.com"
+                    aria-label="Send email to Jeri C"
+                >
 
-                        <a
-                            href="https://www.linkedin.com/in/jeri-c-83233638b"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Visit Jeri C's LinkedIn profile"
-                        >
-                            LinkedIn Profile
-                        </a>
-
-                    </li>
-
-
-                    <!-- GITHUB -->
-
-                    <li>
-
-                        <strong>GitHub:</strong>
-
-                        <a
-                            href="https://github.com/jeri00712"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Visit Jeri C's GitHub profile"
-                        >
-                            GitHub Profile
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </address>
-
-        </section>
-
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <nav aria-label="Footer navigation">
-
-            <ul>
-
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="projects.html">
-                        Projects
-                    </a>
-                </li>
-
-                <li>
-                    <a
-                        href="contact.html"
-                        aria-current="page"
+                    <span
+                        class="contact-link-icon"
+                        aria-hidden="true"
                     >
-                        Contact
-                    </a>
-                </li>
+                        @
+                    </span>
 
-            </ul>
+                    <div>
 
-        </nav>
+                        <h3>
+                            Gmail
+                        </h3>
 
+                        <p>
+                            jersey00712@gmail.com
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+
+                <a
+                    class="contact-link-card"
+                    href="https://www.linkedin.com/in/jeri-c-83233638b"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Jeri C LinkedIn profile"
+                >
+
+                    <span
+                        class="contact-link-icon"
+                        aria-hidden="true"
+                    >
+                        in
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            LinkedIn
+                        </h3>
+
+                        <p>
+                            Jeri C
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- GITHUB -->
+
+                <a
+                    class="contact-link-card"
+                    href="https://github.com/jeri00712"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Jeri C GitHub profile"
+                >
+
+                    <span
+                        class="contact-link-icon"
+                        aria-hidden="true"
+                    >
+                        &lt;/&gt;
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            GitHub
+                        </h3>
+
+                        <p>
+                            jeri00712
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-cta">
+
+                <h2>
+                    Let's Build Something Together
+                </h2>
+
+                <p>
+                    I am always interested in learning, building
+                    projects and connecting with people in technology.
+                </p>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-container">
 
         <p>
-            &copy; 2026 Jeri C. All rights reserved.
+            © 2026 Jeri C. All rights reserved.
         </p>
 
-    </footer>
+        <a href="index.html">
+            Back to Home →
+        </a>
+
+    </div>
+
+</footer>
 
 </body>
-
 </html>
